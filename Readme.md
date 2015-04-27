@@ -6,7 +6,10 @@ An Mvvm Light template for a Xamarin.Forms solution. The solution includes proje
 
 ### Features usage:
 
-In addition to the in-code examples and instructions, here are some examples:
+* ##### Project template file for Visual Studio:
+  If the project template file is all you need, the file is _XamarinFormsMvvmLight.zip_ in the root folder. The files may have to be extracted.
+  
+  There will be references to the old project name (MvvmLightTemplate) in the generated projects, most notably in _MainPage.xaml.cs_ in the WinPhone project. A quick fix for this is to replace the word _MvvmLightTemplate_ with your project name throughout the solution.
 
 * ##### ViewModelLoator:
    The `ViewModelLocator` is a static property in `App` and can be referred to in code as `App.Locator`.
@@ -23,6 +26,7 @@ In addition to the in-code examples and instructions, here are some examples:
 ---
 
 ### Roadmap:
+* The exported template still has references to the old project name.
 * There is no method/event for the application exit event. Separate subscription to events on each platform may be necessary.
 * Test the WinPhone implementation
 * Setup the iOS build and test it

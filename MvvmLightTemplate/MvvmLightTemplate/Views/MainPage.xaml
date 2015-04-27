@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MvvmLightTemplate.Views.MainPage">
+             x:Class="MvvmLightTemplate.Views.MainPage"
+             xmlns:local="clr-namespace:MvvmLightTemplate;assembly=MvvmLightTemplate"
+             BindingContext="{Binding Main, Source={x:Static local:App.Locator}}">
 
   <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
     <Label Text="{Binding TextFromBinding}"/>
-	  <Label Text="{Binding Locator.Main.TextFromLocator}"/>
+	  <Label Text="{Binding Main.TextFromLocator, Source={x:Static local:App.Locator}}"/>
   </StackLayout>
   
 </ContentPage>

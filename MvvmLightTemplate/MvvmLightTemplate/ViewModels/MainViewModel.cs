@@ -1,6 +1,8 @@
-﻿namespace MvvmLightTemplate.ViewModels
+﻿using GalaSoft.MvvmLight;
+
+namespace MvvmLightTemplate.ViewModels
 {
-    public class MainViewModel : ViewModelBaseExt
+    public class MainViewModel : ViewModelBase
     {
         public string TextFromBinding {
             get

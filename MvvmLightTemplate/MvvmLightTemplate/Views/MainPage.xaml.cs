@@ -13,8 +13,6 @@ namespace MvvmLightTemplate.Views
         public MainPage()
         {
             InitializeComponent();
-
-            BindingContext = App.Locator.Main;
         }
     }
 }
